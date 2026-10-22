@@ -1,0 +1,4 @@
+# Opcjonalnie – tylko jeśli korzystasz z Jupyter Notebook
+-r requirements.txt
+jupyter==1.0.0
+notebook==7.1.2

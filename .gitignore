@@ -1,0 +1,11 @@
+# Środowisko
+.venv/
+venv/
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# Artefakty generowane podczas treningu / demo
+*.npy
+*.png
+.DS_Store
