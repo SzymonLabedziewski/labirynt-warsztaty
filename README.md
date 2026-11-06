@@ -51,8 +51,6 @@ Silnik gry (plansza, ruch, nagrody, rysowanie) jest **gotowy**. Uzupełniacie oz
 
 Zalecany Python: **3.10–3.12**.
 
-Na Ubuntu/Debian/WSL **nie** instalujcie bibliotek systemowym `pip` (błąd `externally-managed-environment`). Użyjcie venv:
-
 ```bash
 python3 -m venv .venv
 source .venv/bin/activate
@@ -69,8 +67,6 @@ Opcjonalnie Jupyter:
 ```bash
 pip install -r requirements-notebook.txt
 ```
-
-Na WSL katalog na dysku Windows (`/mnt/c/...`) bywa wolny przy instalacji — to normalne.
 
 ---
 

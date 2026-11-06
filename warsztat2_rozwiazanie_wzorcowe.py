@@ -36,22 +36,23 @@ np.random.seed(SEED)
 # i porównanie z bazą — patrz sekcja 6 w Szablon_sprawozdania.md.
 # Podpowiedź (sekcja 6.4): na 7×7 ustaw BOARD[4, 2] = 1 — często ta sama min.
 # długość trasy, ale inna wyuczona ścieżka (wiele optimum + ε + remisy Q).
-# BOARD = np.array([
-#     [0, 0, 0, 0, 1, 0, 0],
-#     [0, 1, 1, 0, 0, 0, 1],
-#     [0, 0, 0, 0, 1, 0, 0],
-#     [1, 0, 1, 1, 0, 1, 0],
-#     [0, 0, 0, 1, 0, 0, 0],
-#     [0, 0, 1, 0, 0, 0, 1],
-#     [0, 0, 0, 0, 1, 0, 2],
-# ])
 BOARD = np.array([
-    [0, 0, 0, 1, 0],
-    [0, 1, 0, 0, 0],
-    [0, 1, 1, 0, 0],
-    [0, 0, 1, 0, 1],
-    [1, 0, 0, 0, 2],
+    [0, 0, 0, 0, 1, 0, 0],
+    [0, 1, 1, 0, 0, 0, 1],
+    [0, 0, 0, 0, 1, 0, 0],
+    [1, 0, 1, 1, 0, 1, 0],
+    [0, 0, 0, 1, 0, 0, 0],
+    [0, 0, 1, 0, 0, 0, 1],
+    [0, 0, 0, 0, 1, 0, 2],
 ])
+
+# BOARD = np.array([
+#     [0, 0, 0, 0, 0],
+#     [0, 1, 0, 1, 0],
+#     [0, 0, 0, 0, 0],
+#     [0, 1, 0, 1, 0],
+#     [0, 0, 0, 0, 2],
+# ])
 
 GOAL_STATE = tuple(zip(*np.where(BOARD == 2)))[0]  # automatycznie z BOARD
 MAX_STEPS = 50
